@@ -13,6 +13,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 public class AppTest 
     extends TestCase
 {
+    private WebDriver driver;
+
     /**
      * Create the test case
      *
@@ -32,10 +34,17 @@ public class AppTest
     }
 
     public void testBlogPageStructure() {
-        WebDriver driver = new FirefoxDriver();
-        driver.get("http://www.equalexperts.com/blog/");
+        try {
+            driver = new FirefoxDriver();
+            driver.get("http://localhost:4000/");
 
-        assertEquals(driver.findElement(By.className("author-name")).getText(), "Louis Abel");
-        driver.close();
+            assertEquals(driver.findElement(By.className("author-name")).getText(), "Louis Abel");
+        } catch (Exception e) {
+            e.printStackTrace();
+        } finally {
+            if (driver != null) {
+                driver.close();
+            }
+        }
     }
 }
