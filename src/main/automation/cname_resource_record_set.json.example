@@ -1,0 +1,18 @@
+{
+  "Comment": "A new record set for the zone.",
+  "Changes": [
+    {
+      "Action": "CREATE",
+      "ResourceRecordSet": {
+        "Name": "api.realguess.net.",
+        "Type": "CNAME",
+        "TTL": 60,
+        "ResourceRecords": [
+          {
+            "Value": "www.realguess.net"
+          }
+        ]
+      }
+    }
+  ]
+}
