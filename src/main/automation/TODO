@@ -1,0 +1,10 @@
+# Create buckets for blogs: both QA and LIVE
+# Assign bucket policy for website hosting
+# Create dev.blogs.equalexperts.in and blogs.equalexperts.in sub-domains
+# Create CNAME records for username.dev.blogs.equalexperts.in and username.blogs.equalexperts.in
+# Enhance bucket policy for username.dev.blogs.equalexperts.in to only allow access from specific CIDR
+# Create publish user and generate access keys
+# Grant publish user rights to write to username.dev.blogs and username.blogs buckets
+# Create script to copy files recursively from public_html to s3 destination bucket
+# Configure Jenkins job to publish to QA
+# Configure Jenkins job to publish to LIVE
