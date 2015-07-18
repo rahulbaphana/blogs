@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # For the list of names
 # Create the s3 buckets for website hosting
